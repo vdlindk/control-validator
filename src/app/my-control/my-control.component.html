@@ -1,0 +1,11 @@
+<div [formGroup]="myInternalForm">
+  <div>
+    <span>myInternalForm.status</span>
+    <span>{{ myInternalForm.status }}</span>
+  </div>
+  <input formControlName="myValue" />
+  <div>
+    <span>myInternalForm.myValue.status</span>
+    <span>{{ myValue.status }}</span>
+  </div>
+</div>
