@@ -27,7 +27,7 @@ import { myValidator } from './my-validator';
     {
       provide: NG_VALIDATORS,
       multi: true,
-      useExisting: MyControlComponent,
+      useExisting: forwardRef(() => MyControlComponent),
     },
   ],
 })
